@@ -10,9 +10,9 @@ class HomePage extends React.Component {
     }
 
     render() {
-        return <body>
+        return <React.Fragment>
             <Header/>
-        </body>
+        </React.Fragment>
     }
 
 }
