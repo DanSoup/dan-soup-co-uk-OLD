@@ -1,0 +1,18 @@
+header {
+    background-color: black;
+    width: 100vw;
+}
+
+h1, h2 {
+    color: #ffffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    animation: slideFadeIn 1s 1 linear;
+}
+
+@keyframes slideFadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
