@@ -1,6 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
 import './normalize.css';
+import './debug.css';
 import HomePage from './components/homePage/homePage.js';
 
 function App() {
