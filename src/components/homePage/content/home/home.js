@@ -13,7 +13,7 @@ const Home = (props) => {
   });
 
   const intro = [
-    'That\'s me! This is my website that I made for putting all my stuff on. I\'m a full stack developer, a gamer, a former Super Smash Bros. Melee tournament organizer, a sketcher, a poet, and probably a load of other stuff that I can\'t remember right now.',
+    'That\'s me! This is my website that I made for putting all my stuff on. I\'m a full stack developer, a gamer, a former Super Smash Bros. Melee tournament organizer, a sketcher, a poet, and a load of other things. Too many hobbies, not enought time, amirite?',
     'If you\'re looking at hiring me, you can read more about me in my PORTFOLIO, if not you can navigate via the navbar at the top of the page to check out my projects and read my blog. Have fun!'
   ]
 

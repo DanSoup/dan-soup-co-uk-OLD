@@ -11,8 +11,8 @@ const NavBar = (props) => {
     <Link to="/blog">
       <button>Blog</button>
     </Link>
-    <Link to="/portfolio">
-      <button>Portfolio</button>
+    <Link to="/about-me">
+      <button>About Me</button>
     </Link>
     <Link to="/experiments">
       <button>Experiments</button>
