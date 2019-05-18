@@ -1,24 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Subtitle from './subtitles/subtitles.js';
-import NavBar from './navBar/navBar.js'
 
-class Header extends React.Component {
+import NavBar from './navBar/navBar.js';
 
-    state = {
-        
-    }
+const Header = (props) => {
 
-    render() {        
-    
-        return <header>
-            <h1>DAN SOUP</h1>
-            <Subtitle/>
-            <NavBar/>
-
-        </header>
-
-    }
+  return <header>
+    <div className="mainTitle">
+      <h1>Dan Soup</h1><h2> - Dot Co Dot UK</h2>
+    </div>
+    <NavBar/>
+  </header>
 
 }
 

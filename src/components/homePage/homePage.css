@@ -1,43 +1,118 @@
-header {
-    background-color: black;
-    width: 100vw;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* FONTS */
+
+@font-face {
+  font-family: Octarine-Light;
+  src: url('../../fonts/Octarine-Light.otf');
+}
+
+@font-face {
+  font-family: Octarine-Bold;
+  src: url('../../fonts/Octarine-Bold.otf');
 }
 
 h1, h2 {
-    color: #ffffffff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-family: 'Octarine-Bold';
+	color: #ffffffff;
 }
 
-.subtitleContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    top: 50px;
+p {
+  font-family: Octarine-Light;
+  font-size: 1.3em;
+  margin: 0px;
 }
 
-.subtitleLeft, .subtitleRight, .subtitleCenter {
-    position: relative;
-    text-align: center;
-    transition: 1s;
+.mainTitle {
+  padding: 15px;
 }
 
-.subtitleLeft {
-    left: -200px;
-    opacity: 0;
+.mainTitle > h1, .mainTitle > h2 {
+  display: inline;
 }
 
-.subtitleRight {
-    left: 200px;
-    opacity: 0;
+.mainTitle > h1 {
+  font-size: 4em;
 }
 
-.subtitleCenter {
-    left: 0px;
-    opacity: 1;
+header {
+	background-color: #000000ff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+nav a {
+  cursor: default;
+}
+
+nav button {
+  color: #000000ff;
+  font-family: 'Octarine-Light';
+  border: 0px;
+  background-color: #ddddddff;
+  margin: 5px;
+  padding: 5px;
+  transition: 0.25s;
+  outline: 1px #ddddddff solid;
+  outline-offset: -1px;
+}
+
+nav:hover button {
+  background-color: #ffffffff;
+}
+
+nav button:hover {
+  outline-offset: 2px;
+}
+
+nav button:active {
+  background-color: red;
+}
+
+body {
+  background-color: #202020ff;
+}
+
+.dsBlock {
+  background-color: #000000ff;
+  color: #ffffffff;
+  border: 1px solid #ffffffff;
+  width: 75%;
+  align-self: center;
+  justify-content: center;
+  transition: 1s;
+  margin: 5px;
+  padding: 10px;
+}
+
+.dsBlockTitle1 {
+  background-color: #000000ff;
+  color: #ffffffff;
+  border: 1px solid #ffffffff;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  align-self: center;
+  justify-content: center;
+  transition: 1s;
+  margin: 5px;
+  align-items: center;
+  padding: 10px;
+}
+
+.dsFloatRight {
+  float: right;
+  position: relative;
+}
+
+.invis {
+  opacity: 0;
+}
+
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }

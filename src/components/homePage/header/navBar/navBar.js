@@ -1,19 +1,23 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-class NavBar extends React.Component {
+const NavBar = (props) => {
 
-    state = {
-
-    };
-
-    render() {
-
-    return <React.Fragment>
-        NavBar
-    </React.Fragment>
-
-}
+  return <nav>
+    <Link to="/home">
+      <button>Home</button>
+    </Link>
+    <Link to="/blog">
+      <button>Blog</button>
+    </Link>
+    <Link to="/portfolio">
+      <button>Portfolio</button>
+    </Link>
+    <Link to="/experiments">
+      <button>Experiments</button>
+    </Link>
+  </nav>
 
 }
 
