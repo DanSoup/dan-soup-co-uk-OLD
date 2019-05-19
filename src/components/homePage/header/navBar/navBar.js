@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const NavBar = (props) => {
 
   return <nav>
-    <Link to="/home">
+    <Link to="/">
       <button>Home</button>
     </Link>
     <Link to="/blog">
