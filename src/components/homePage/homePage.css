@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: Octarine-Light;
-  src: url('../../fonts/Octarine-Light.otf');
+  src: url('../fonts/Octarine-Light.otf');
 }
 
 @font-face {
   font-family: Octarine-Bold;
-  src: url('../../fonts/Octarine-Bold.otf');
+  src: url('../fonts/Octarine-Bold.otf');
 }
 
 h1, h2 {
