@@ -41,6 +41,9 @@ nav {
   display: flex;
   flex-direction: row;
   padding: 5px;
+  position: sticky;
+  top: 0px;
+  background-color: black;
 }
 
 nav a {
