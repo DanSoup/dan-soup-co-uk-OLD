@@ -10,7 +10,8 @@ const Header = (props) => {
     'Bullet Bill\'s Best Friend',
     'The Pinball Developer',
     'Definitely Not Illegal',
-    'Run to the Helicopter'
+    'Run to the Helicopter',
+    'Platonic Solids vs Romantic Solids'
   ];
 
   const RandomSubtitle = () => {
