@@ -1,11 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './projects.css';
 
 const Projects = (props) => {
 
-  return <React.Fragment>
-    Projects
-  </React.Fragment>
+  const projects = [
+    {
+      title: 'Psoupocode'
+    }
+  ];
+
+  const ProjectPreview = () => {
+    return <section>
+      <h1>Psoupocode</h1>
+    </section>
+  };
+
+  return <div className="projects">
+    <ProjectPreview/>
+  </div>
 
 }
 
