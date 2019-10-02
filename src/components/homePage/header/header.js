@@ -1,23 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import subtitles from './subtitles.json';
 
 import NavBar from './navBar/navBar.js';
 
 const Header = (props) => {
 
-  const subTitles = [
-    'Dot Co Dot UK',
-    'Bullet Bill\'s Best Friend',
-    'The Pinball Developer',
-    'Definitely Not Illegal',
-    'Run to the Helicopter',
-    'Platonic Solids vs Romantic Solids'
-  ];
-
   const RandomSubtitle = () => {
-
-    const chosenSubtitle = subTitles[Math.floor(Math.random() * subTitles.length)];
-
+    const chosenSubtitle = subtitles[Math.floor(Math.random() * subtitles.length)];
     return <h2>{` - ${chosenSubtitle}`}</h2>
   };
 
