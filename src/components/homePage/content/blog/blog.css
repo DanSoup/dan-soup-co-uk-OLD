@@ -1,0 +1,23 @@
+div.blog-page {
+  background-color: red;
+}
+
+div.blog-page article {
+  border: solid 1px white;
+  background-color: black;
+  padding: 15px;
+}
+
+div.blog-page article h1 {
+  margin: 0px;
+}
+
+div.blog-page article p {
+  color: white;
+  margin: 0px;
+}
+
+div.blog-page article time {
+  color: white;
+  font-family: 'Octarine-Bold';
+}
