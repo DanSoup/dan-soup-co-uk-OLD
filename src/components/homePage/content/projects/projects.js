@@ -6,7 +6,8 @@ const Projects = (props) => {
 
   const projects = [
     {
-      title: 'Psoupocode'
+      title: 'Psoupocode',
+      previewImg: 'https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg',
     }
   ];
 
