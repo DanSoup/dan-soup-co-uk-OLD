@@ -4,6 +4,27 @@ div.projects section {
   padding: 15px;
 }
 
-div.projects section h1 {
+div.projects section h1,
+div.projects section h2,
+div.projects section p 
+{
   margin: 0px;
+  color: white;
+}
+
+div.projects section h2 {
+  font-size: 1em;
+}
+
+div.projects > section {
+  display: flex;
+}
+
+div.projects > section > img {
+  border: solid white 1px;
+}
+
+div.projects > section > div {
+  /* padding: 15px; */
+  padding-left: 15px;
 }
