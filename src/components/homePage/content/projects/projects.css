@@ -1,7 +1,21 @@
-div.projects section {
+div.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.projects > section {
   background-color: #000000ff;
   border: solid 1px white;
   padding: 15px;
+  margin: 15px;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+div.projects > section > div.spacer {
+  height: 15px;
 }
 
 div.projects section h1,
@@ -16,15 +30,7 @@ div.projects section h2 {
   font-size: 1em;
 }
 
-div.projects > section {
-  display: flex;
-}
-
 div.projects > section > img {
+  margin: 0px;
   border: solid white 1px;
-}
-
-div.projects > section > div {
-  /* padding: 15px; */
-  padding-left: 15px;
 }
