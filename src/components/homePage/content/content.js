@@ -6,6 +6,7 @@ import Home from './home/home.js';
 import AboutMe from './aboutMe/aboutMe.js';
 import Blog from './blog/blog.js';
 import Projects from './projects/projects.js';
+import ProjectPage from './projects/projectPage.js';
 
 const Content = (props) => {
 
@@ -15,6 +16,7 @@ const Content = (props) => {
     <Route exact path="/about-me" component={AboutMe}/>
     <Route exact path="/blog" component={Blog}/>
     <Route exact path="/projects" component={Projects}/>
+    <Route path="/projects/*" component={ProjectPage}/>
   </main>
 
 }
