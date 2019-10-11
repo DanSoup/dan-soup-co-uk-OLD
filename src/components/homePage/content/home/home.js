@@ -17,9 +17,6 @@ const Home = (props) => {
     <section>
       <h1>Project Updates</h1>
     </section>
-    <section>
-      <h1>Tweets</h1>
-    </section>
   </div>
 
 }
