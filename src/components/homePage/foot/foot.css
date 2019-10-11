@@ -1,0 +1,12 @@
+footer {
+  /* top: calc(100vh - 100%); */
+  /* top: 100vh; */
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  padding: 5px;
+  border-top: #ffffffff 1px solid;
+  background-color: #000000ff;
+  color: #ffffffff;
+  font-family: Octarine-Light
+}
