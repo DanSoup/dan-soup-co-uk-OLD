@@ -23,6 +23,7 @@ p {
 
 .mainTitle {
   padding: 15px;
+  padding-bottom: 0px;
 }
 
 .mainTitle > h1, .mainTitle > h2 {
