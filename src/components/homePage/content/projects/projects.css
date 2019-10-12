@@ -3,18 +3,40 @@ div.projects {
   flex-wrap: wrap;
 }
 
+
+
+div.projects > section > a {
+  text-decoration: none;
+}
+
+div.projects > section > a:active {
+  border: solid red 10px;
+}
+
 div.projects > section {
   background-color: #000000ff;
   border: solid 1px white;
-  padding: 15px;
+  /* padding: 15px; */
   margin: 15px;
   display: flex;
   /* justify-content: space-between; */
   flex-direction: column;
   /* height: 100%; */
+  outline: solid 1px #ffffffff;
+  outline-offset: -1px;
+  transition: 0.5s;
 }
 
-div.projects > section > div.spacer {
+div.projects > section > a > div {
+  padding: 15px;
+}
+
+div.projects > section:hover {
+  outline: solid 1px #ffffffff;
+  outline-offset: 5px;
+}
+
+div.projects > section div.spacer {
   height: 15px;
 }
 
@@ -30,7 +52,7 @@ div.projects section h2 {
   font-size: 1em;
 }
 
-div.projects > section > img {
+div.projects > section img {
   margin: 0px;
   border: solid white 1px;
 }
