@@ -3,10 +3,10 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './projects.css';
 
-let projects;
+let projects = [];
 
 if (process.env.NODE_ENV === 'development') {
-  projects = require('../../../offline-data/projects')
+  projects = require('../../../../offline-data/projects')
 } else {
 
 }

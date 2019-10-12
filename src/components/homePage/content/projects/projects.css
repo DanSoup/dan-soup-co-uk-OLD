@@ -10,7 +10,12 @@ div.projects > section > a {
 }
 
 div.projects > section > a:active {
-  border: solid red 10px;
+  border: none;
+  outline: none;
+}
+
+div.projects > section > a:active > div {
+  outline: solid red 1px;
 }
 
 div.projects > section {
