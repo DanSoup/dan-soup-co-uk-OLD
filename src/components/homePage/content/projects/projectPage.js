@@ -20,7 +20,7 @@ const ProjectPage = (props) => {
       <div>
         <h1>{project.title}</h1>
         <h2>Published: {project.published}</h2>
-        <h2>Link: {project.link}</h2>
+        <h2>Link: <a target="_blank" href={project.url}>{project.link}</a></h2>
       </div>
     </div>
     <p>{project.description}</p>

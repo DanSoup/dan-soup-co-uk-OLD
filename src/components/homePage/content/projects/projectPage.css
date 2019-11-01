@@ -19,6 +19,18 @@ section.project-page p {
   color: white;
 }
 
+section.project-page a {
+  color: #aaaaaaff;
+}
+
+section.project-page a:hover {
+  color: #ffffffff;
+}
+
+section.project-page a:visited {
+  color: #ccccccff;
+}
+
 section.project-page h2 {
   margin: 0px;
 }
