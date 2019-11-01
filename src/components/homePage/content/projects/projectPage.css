@@ -1,0 +1,29 @@
+section.project-page {
+  background-color: black;
+  border: solid 1px white;
+}
+
+section.project-page > div {
+  margin: 15px;
+  display: flex;
+}
+
+section.project-page > div > div {
+  width: 15px;
+  margin: 0px 0px 0px 15px;
+  flex-grow: 1;
+}
+
+section.project-page p {
+  margin: 15px;
+  color: white;
+}
+
+section.project-page h2 {
+  margin: 0px;
+}
+
+section.project-page > div img {
+  margin: 0px;
+  border: solid white 1px;
+}
