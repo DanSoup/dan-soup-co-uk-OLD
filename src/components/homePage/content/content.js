@@ -8,6 +8,8 @@ import Blog from './blog/blog.js';
 import Projects from './projects/projects.js';
 import ProjectPage from './projects/projectPage.js';
 
+let projectData;
+
 const Content = (props) => {
 
   return <main>

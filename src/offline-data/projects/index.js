@@ -1,7 +1,10 @@
 module.exports = [
   {
     title: 'Psoupocode',
-    previewImg: 'https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg'
+    previewImg: 'https://upload.wikimedia.org/wikipedia/commons/6/66/An_up-close_picture_of_a_curious_male_domestic_shorthair_tabby_cat.jpg',
+    description: "Psoupocode is a coding tutorial website I created to assist those learning to code. After working through resources such as Codecademy with students at Code and Stuff I felt some learning resources were lacking. With Psoupocode I aim to create lessons and tutorials that are easy to follow, require no former knowledge and teach the things that other tutorials leave out. I'm hoping to write about JavaScript, HTML, CSS, React, game development, mathematics and whatever else takes my fancy.",
+    link: 'psoupo.code',
+    published: 'TBC'
   },
   {
     title: 'dansoup.co.uk',
@@ -9,6 +12,6 @@ module.exports = [
   },
   {
     title: 'danOSoup',
-    previewImg: ''
+    previewImg: 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/images/danOSoup-icon.png'
   }
 ]

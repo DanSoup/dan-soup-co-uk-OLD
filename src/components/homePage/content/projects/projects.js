@@ -22,7 +22,7 @@ const Projects = (props) => {
             <div className="spacer"></div>
             <h1>{project.title}</h1>
             <div className="spacer"></div>
-            <h2>Published 10/2019</h2>
+            <h2>{project.published}</h2>
           </div>
         </Link>
       </section>
