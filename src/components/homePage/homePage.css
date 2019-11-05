@@ -80,41 +80,7 @@ body {
   background-color: #202020ff;
 }
 
-.dsBlock {
-  background-color: #000000ff;
-  color: #ffffffff;
-  border: 1px solid #ffffffff;
-  width: 75%;
-  align-self: center;
-  justify-content: center;
-  transition: 1s;
-  margin: 5px;
-  padding: 10px;
-}
 
-.dsBlockTitle1 {
-  background-color: #000000ff;
-  color: #ffffffff;
-  border: 1px solid #ffffffff;
-  display: flex;
-  flex-direction: column;
-  width: 75%;
-  align-self: center;
-  justify-content: center;
-  transition: 1s;
-  margin: 5px;
-  align-items: center;
-  padding: 10px;
-}
-
-.dsFloatRight {
-  float: right;
-  position: relative;
-}
-
-.invis {
-  opacity: 0;
-}
 
 main {
   padding: 10px;
