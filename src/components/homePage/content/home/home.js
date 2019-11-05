@@ -5,12 +5,6 @@ import Projects from '../projects/projects.js';
 
 const Home = (props) => {
 
-  const [invis, updateInvis] = useState(true);
-
-  useEffect(() => {
-    updateInvis(false);
-  });
-
   return <div className="home-page">
     <h1>Home Page Under Construction</h1>
     <Projects/>
