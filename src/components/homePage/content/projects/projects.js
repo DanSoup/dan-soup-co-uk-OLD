@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './projects.css';
 
 let projects = [];
 
-if (process.env.NODE_ENV === 'development') {
-  projects = require('../../../../offline-data/projects')
-} else {
-
-}
-
 const Projects = (props) => {
+
+  const [sProjects, uProjects] = useState([]);
+
+  const url = (process.env.NODE_ENV === 'development') ? 'http://localhost:8080' : 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/projects/projects.json'
+
+  useEffect(() => {
+    fetch(url)
+    .then(res => res.json())
+    .then(res => {
+      uProjects(res);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+  }, []);
 
   const ProjectPreview = ({project}) => {
     return (
@@ -30,8 +39,8 @@ const Projects = (props) => {
   };
 
   return <div className="projects">
-    {projects.map(project => {
-      return <ProjectPreview project={project}></ProjectPreview>
+    {sProjects.map(project => {
+      return <ProjectPreview project={project} key={project.title}></ProjectPreview>
     })}
   </div>
 

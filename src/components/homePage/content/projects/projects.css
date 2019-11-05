@@ -22,7 +22,7 @@ div.projects > section {
   background-color: #000000ff;
   border: solid 1px white;
   /* padding: 15px; */
-  margin: 15px;
+  margin: 0px 10px 10px 0px;
   display: flex;
   /* justify-content: space-between; */
   flex-direction: column;
