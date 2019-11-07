@@ -10,6 +10,10 @@
   src: url('../fonts/Octarine-Bold.otf');
 }
 
+main {
+  margin-bottom: 18.4px;
+}
+
 h1, h2 {
 	font-family: 'Octarine-Bold';
 	color: #ffffffff;
@@ -79,8 +83,6 @@ nav button:active {
 body {
   background-color: #202020ff;
 }
-
-
 
 main {
   padding: 10px;
