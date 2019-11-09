@@ -9,7 +9,7 @@ const Projects = (props) => {
 
   const [sProjects, uProjects] = useState([]);
 
-  const url = (process.env.NODE_ENV === 'development') ? 'http://localhost:8080' : 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/projects/projects.json'
+  const url = (process.env.NODE_ENV === 'development') ? 'http://localhost:8080/projects' : 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/projects/index.json'
 
   useEffect(() => {
     fetch(url)
@@ -25,7 +25,7 @@ const Projects = (props) => {
   const ProjectPreview = ({project}) => {
     return (
       <section>
-        <Link to={`/projects/${project.title}`}>
+        <Link to={`/projects/${project.slug}`}>
           <div>
             <img height="150" width="300" src={project.previewImg}></img>
             <div className="spacer"></div>
