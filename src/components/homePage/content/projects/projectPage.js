@@ -6,23 +6,25 @@ let projects = [];
 
 const ProjectPage = (props) => {
 
-  const [sProjects, uProjects] = useState([]);
+  const [sProject, uProject] = useState([]);
+
+  const slug = props.location.pathname.match(/\/projects\/(.+)/)[1];
 
   useEffect(() => {
 
-    const url = (process.env.NODE_ENV === 'development') ? 'http://localhost:8080' : 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/projects/projects.json'
+    const url = (process.env.NODE_ENV === 'development') ? `http://localhost:8080/projects/${slug}` : 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/projects/projects.json'
 
     fetch(url)
     .then(res => res.json())
     .then(res => {
-      uProjects(res);
+      uProject(res);
     })
     .catch(err => {
       console.log(err);
     });
   }, []);
 
-  const project = sProjects.find(project => project.title === props.location.pathname.match(/\/projects\/(.+)/)[1]) || {}
+  const project = sProject || {};
 
   return <section className="project-page">
     <div>
