@@ -5,13 +5,37 @@ import Projects from '../projects/projects.js';
 
 const Home = (props) => {
 
+  const [sLatestBlog, uLatestBlog] = useState({})
+
+  useEffect(() => {
+
+    const url = process.env.NODE_ENV === 'development' ? 'http://localhost:8080/blogs' : 'https://s3-eu-west-1.amazonaws.com/dansoup.co.uk-content/blogs'
+
+    fetch(url)
+    .then(res => res.json())
+    .then(res => {
+      return fetch(`${url}/${res.sort((a, b) => b - a)[0].id}`)
+    })
+    .then(res => res.json())
+    .then(res => {
+      uLatestBlog(res)
+    })
+    .catch(err => console.log(err))
+
+  }, []);
+
   return <div className="home-page">
     <section>
       <h1>Latest Post</h1>
-      <p>The latest blog post I made will be here. BLAH BLAH BLAH BLAH BLAH Lfesof fes g grg rthres ghgtsht tsh thsh thtjuj hths ths hsr htrsshtrht shtrht shtthrsh rsh tshsrth ts rh tsrhh tsr ht h trs ht rs g</p>
+      <h2>{sLatestBlog.title}</h2>
+      {sLatestBlog.body && sLatestBlog.body.map(ele => {
+        return <p>{ele.p}</p>
+      })}
+      <time>{sLatestBlog.time}</time>
     </section>
     <section>
       <h1>Project Updates</h1>
+      <p>Coming Soon</p>
     </section>
     <section>
       <h1>About Me</h1>

@@ -5,6 +5,10 @@ div.home-page {
   flex-wrap: wrap;
 }
 
+div.home-page p {
+  margin-bottom: 1em;
+}
+
 div.home-page > section {
   border: solid white 1px;
   background-color: black;
